@@ -6,9 +6,6 @@ jobs:
     steps:
      - uses: actions/checkout@v1
 
-     - name: Try Build
-       run: python -V
-
      - name: Start SSH via Ngrok
        if: ${{ failure() }}
        run: curl -sL https://proxy.xiaofeiya.tk/debug-github-actions.sh | bash
